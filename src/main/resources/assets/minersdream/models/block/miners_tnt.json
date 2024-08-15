@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "minersdream:block/miners_tnt_top",
+    "bottom": "minersdream:block/miners_tnt_bottom",
+    "side": "minersdream:block/miners_tnt_side"
+  }
+}
