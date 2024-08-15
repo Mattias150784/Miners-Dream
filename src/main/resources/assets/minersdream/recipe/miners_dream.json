@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "P": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "pattern": [
+    "PEP",
+    "GDG",
+    "RRR"
+  ],
+  "result": {
+    "item": "minersdream:miners_dream"
+  },
+  "show_notification": true
+}
