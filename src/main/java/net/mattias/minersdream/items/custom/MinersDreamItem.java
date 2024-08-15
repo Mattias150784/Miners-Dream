@@ -20,6 +20,9 @@ public class MinersDreamItem extends Item {
         if (!level.isClientSide) {
             Vec3 lookVec = context.getPlayer().getLookAngle();
             clearArea(level, pos, lookVec);
+
+            // Remove the item from the player's inventory after use
+            context.getItemInHand().shrink(1);
         }
         return InteractionResult.SUCCESS;
     }
@@ -59,6 +62,5 @@ public class MinersDreamItem extends Item {
                 level.getBlockState(pos).is(Blocks.TUFF) ||
                 level.getBlockState(pos).is(Blocks.SAND) ||
                 level.getBlockState(pos).is(Blocks.SAND);
-
     }
 }
