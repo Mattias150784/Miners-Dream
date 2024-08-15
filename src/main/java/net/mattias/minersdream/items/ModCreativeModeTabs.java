@@ -1,6 +1,7 @@
 package net.mattias.minersdream.items;
 
 import net.mattias.minersdream.MinersDream;
+import net.mattias.minersdream.blocks.ModBlocks;
 import net.mattias.minersdream.items.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -21,6 +22,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.miners_dream"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.MINERS_DREAM.get());
+                        pOutput.accept(ModBlocks.MINERS_TNT.get());
 
                     })
                     .build());

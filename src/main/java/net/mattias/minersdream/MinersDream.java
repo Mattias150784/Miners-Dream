@@ -1,6 +1,7 @@
 package net.mattias.minersdream;
 
 import com.mojang.logging.LogUtils;
+import net.mattias.minersdream.blocks.ModBlocks;
 import net.mattias.minersdream.items.ModCreativeModeTabs;
 import net.mattias.minersdream.items.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,7 @@ public class MinersDream
         modEventBus.addListener(this::commonSetup);
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
