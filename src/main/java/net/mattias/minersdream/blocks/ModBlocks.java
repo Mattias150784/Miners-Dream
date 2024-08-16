@@ -1,6 +1,7 @@
 package net.mattias.minersdream.blocks;
 
 import net.mattias.minersdream.MinersDream;
+import net.mattias.minersdream.blocks.custom.MinersTNTBlock;
 import net.mattias.minersdream.items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -22,7 +23,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> MINERS_TNT = registerBlock("miners_tnt",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TNT)));
+            () -> new MinersTNTBlock(BlockBehaviour.Properties.copy(Blocks.TNT)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -59,7 +59,6 @@ public class MinersDreamItem extends Item {
                 level.getBlockState(pos).is(Blocks.DIRT) ||
                 level.getBlockState(pos).is(Blocks.GRAVEL) ||
                 level.getBlockState(pos).is(Blocks.TUFF) ||
-                level.getBlockState(pos).is(Blocks.SAND) ||
                 level.getBlockState(pos).is(Blocks.SAND);
 
     }
