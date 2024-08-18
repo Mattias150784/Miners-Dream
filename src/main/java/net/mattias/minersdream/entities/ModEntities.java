@@ -16,5 +16,5 @@ public class ModEntities {
     public static final RegistryObject<EntityType<MinersTNTPrimed>> MINERS_TNT_PRIMED = ENTITY_TYPES.register("miners_tnt_primed",
             () -> EntityType.Builder.<MinersTNTPrimed>of(MinersTNTPrimed::new, MobCategory.MISC)
                     .sized(0.98F, 0.98F)
-                    .build(MinersDream.MOD_ID + ":miners_tnt_primed"));
+                    .build(MinersDream.MOD_ID + ":miners_tnt"));
 }

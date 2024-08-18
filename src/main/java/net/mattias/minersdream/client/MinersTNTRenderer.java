@@ -1,5 +1,6 @@
 package net.mattias.minersdream.client;
 
+import net.mattias.minersdream.blocks.ModBlocks;
 import net.mattias.minersdream.entities.MinersTNTPrimed;
 import net.minecraft.client.renderer.block.BlockRenderDispatcher;
 import net.minecraft.client.renderer.entity.EntityRenderer;
@@ -25,7 +26,7 @@ public class MinersTNTRenderer extends EntityRenderer<MinersTNTPrimed> {
         poseStack.pushPose();
         poseStack.translate(-0.5D, 0.0D, -0.5D);
 
-        BlockState blockState = Blocks.TNT.defaultBlockState();
+        BlockState blockState = ModBlocks.MINERS_TNT.get().defaultBlockState(); // Replace with your custom block
         blockRenderer.renderSingleBlock(blockState, poseStack, buffer, packedLight, OverlayTexture.NO_OVERLAY);
 
         poseStack.popPose();
