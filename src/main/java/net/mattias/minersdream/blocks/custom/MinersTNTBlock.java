@@ -34,9 +34,6 @@ import java.util.Set;
 public class MinersTNTBlock extends Block {
     public static final BooleanProperty UNSTABLE = BlockStateProperties.UNSTABLE;
 
-    private static final Set<Block> ALLOWED_BLOCKS = Set.of(
-            Blocks.STONE, Blocks.DIRT, Blocks.GRASS_BLOCK, Blocks.DEEPSLATE, Blocks.GRANITE, Blocks.ANDESITE, Blocks.GRAVEL, Blocks.DIORITE, Blocks.SAND, Blocks.TUFF
-    );
 
     public MinersTNTBlock(BlockBehaviour.Properties pProperties) {
         super(pProperties);
