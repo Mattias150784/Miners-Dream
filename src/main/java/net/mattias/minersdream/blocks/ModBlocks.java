@@ -24,7 +24,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> MINERS_TNT = registerBlock("miners_tnt",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TNT)));
+            () -> new MinersTNTBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TNT)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
